@@ -1,0 +1,44 @@
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Cambridge PE", "MSCI PE", "PitchBook PE", "S&P 500"],
+    "datasets": [
+      {
+        "label": "Annualized Return (%)",
+        "data": [11.0, 13.1, 12.3, 12.3],
+        "backgroundColor": "#4CAF50"
+      },
+      {
+        "label": "Volatility (Std Dev %)",
+        "data": [16.1, 15.5, 15.8, 16.3],
+        "backgroundColor": "#FF5722"
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "title": {
+          "display": true,
+          "text": "Percentage (%)"
+        }
+      },
+      "x": {
+        "title": {
+          "display": true,
+          "text": "Benchmark"
+        }
+      }
+    },
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Private Equity Benchmarks vs. S&P 500: Returns and Volatility"
+      },
+      "legend": {
+        "position": "top"
+      }
+    }
+  }
+}
